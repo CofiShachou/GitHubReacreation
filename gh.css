@@ -24,6 +24,7 @@ body {
     --boja5: #333333;
     --boja6: #bdbdbd;
     --boja7: #FFFFFF;
+    --boja8: #f7f7f7;
 
     margin: 0.1px;
     overflow-x: hidden;
@@ -165,25 +166,113 @@ body {
 
 .footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 200px;
+    background-color: var(--boja7);
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 150px 50px 150px;
+    text-align: center;
+    gap: 5px;
+    margin-top: 50px;
+}
+
+.icon-deco {
+    font-size: 40px;
+    width: 100px;
+    border: 0.1px solid var(--boja4);
+    border-radius: 100%;
+    margin-top: 15px;
+    height: 40px;
+    width: 50px;
+    padding: 20px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    transform: scale(110%);
+}
+
+.centar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.olovka::before {
+    content: "\f304";
+    color: var(--boja3);
+}
+
+.linkIcon::before {
+    content: '\f0c1';
+    color: var(--boja3);
+}
+
+.knjiga::before {
+    content: '\f518';
+    color: var(--boja3);
 }
 
 .footerNaslov {
-    font: normal normal 28px octicons;
-    display: inline-block;
-    text-decoration: none;
-    -webkit-font-smoothing: antialiased;
     color: var(--boja3);
-    line-height: 100px;
-
+    font-size: 30px;
 }
 
-.footerNaslov::before {
-    content: "\f304";
+.footerText {
+    line-height: 23px;
+}
+
+.tri {
+    width: 300px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.link {
     color: var(--boja3);
+}
 
+.footerVelikiNaslov {
+    font-size: 50px;
+    width: 900px;
+    text-align: center;
+    color: var(--boja5);
+    margin-top: 100px;
+}
 
-    /* /f0c1 */
-    /* /f518 */
+.linija {
+    border-top: 0.1px solid var(--boja4);
+    width: 65%;
+}
+
+.l {
+    display: flex;
+}
+
+.l1 {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    padding: 50px;
+    /* margin-left: -50px; */
+    /* margin-right: 100px; */
+}
+
+.l2 {
+    display: flex;
+    /* margin-left: 100px; */
+    gap: 10px;
+    font-size: 14px;
+    padding: 50px;
+}
+
+.git::before {
+    content: '\e592';
+    color: var(--boja4);
+    font-size: 40px;
+    margin: 35px 150px;
 }
