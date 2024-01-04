@@ -12,12 +12,6 @@ function leav1() {
         btn2.css({ "color": "var(--boja1)", "outline": "0.1px solid var(--boja4)" });
     }
 }
-$("#projectButton").mouseenter(() => {
-    ent1();
-})
-$("#projectButton").mouseleave(() => {
-    leav1();
-})
 
 function ent2() {
     if (x != 0) {
@@ -30,6 +24,15 @@ function leav2() {
     }
 }
 
+
+
+$("#projectButton").mouseenter(() => {
+    ent1();
+})
+$("#projectButton").mouseleave(() => {
+    leav1();
+})
+
 $("#userButton").mouseenter(() => {
     ent2();
 })
@@ -37,6 +40,10 @@ $("#userButton").mouseenter(() => {
 $("#userButton").mouseleave(() => {
     leav2()
 })
+
+
+
+
 
 
 btn2.click(() => {
@@ -58,4 +65,8 @@ btn1.click(() => {
     $("#prvi").css("display", "block");
     $("#drugi").css("display", "none");
 })
+
+
+
+
 

@@ -29,6 +29,16 @@ body {
     overflow-x: hidden;
 }
 
+.icon-before::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
 .hero {
     background-color: var(--boja1);
     height: 670px;
@@ -151,4 +161,29 @@ body {
 .drugi {
     margin-top: 200px;
     display: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.footerNaslov {
+    font: normal normal 28px octicons;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    color: var(--boja3);
+    line-height: 100px;
+
+}
+
+.footerNaslov::before {
+    content: "\f304";
+    color: var(--boja3);
+
+
+    /* /f0c1 */
+    /* /f518 */
 }
